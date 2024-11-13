@@ -78,16 +78,20 @@ body{
     height: calc(100vh-70px);
     display: flex;
     overflow: hidden;
+    scrollbar-width: none;
+    
+   
 
 }
 
+
 /* sidebar */
 .sidebar{
-    height: 100%;
+    height: 90vh;
     width: 230px;
     background-color: white;
-    
-   
+    overflow-y: scroll;
+    overscroll-behavior: contain;   
 
 }
 
@@ -97,8 +101,7 @@ body{
     flex-direction: column;
     margin-top: 15px;
     margin-bottom: 15px;
-
-
+    
 }
 
 .sidebar-category{
@@ -122,7 +125,7 @@ body{
 }
 
 .sidebar::-webkit-scroller{
-    display: none;
+    display:flow-root;
 
 }
 
@@ -141,7 +144,7 @@ hr{
 }
 .font{
     margin: 20px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 600;
 }
 
